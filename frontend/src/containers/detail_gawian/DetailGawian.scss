@@ -1,0 +1,122 @@
+.detail {
+
+    .detail-banner{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: #eeeee4;
+        box-shadow: -1px 15px 30px -12px black;
+        border-radius: 15px;
+        position: relative;
+        height: 450px;
+        line-height: 0.9; 
+        width: 100%;
+        margin-top: 90px;
+
+        .detail-text-center{
+            text-align: center;
+            padding: 80px;
+            margin: auto;
+
+            h1{
+                color: #cc4a1f;
+                font-size: 30px;
+                padding-bottom: 20px;
+                padding-top: 20px;
+
+            }
+    
+            h3{
+                font-size: 20px;
+                padding-bottom: 20px;
+            }
+
+            h2{
+                font-size: 25px;
+            }
+
+            .img-center {
+                display: block;
+                margin: 0 auto;
+                width: 250px;
+                height: 150px;
+                background-size: cover;
+                border-radius: 10%;
+                overflow: hidden;
+            }
+        }
+    }
+
+    .detail-content{
+        // min-height: 100vh;
+
+        @media (max-width: 600px){
+            
+            // min-height: 100vh;
+        }
+    }
+
+    .detail-title{
+        color: #cc4a1f;
+        min-width: fit-content;
+        // border-bottom: 5em;
+    }
+
+    .detail-content-left{
+
+        display: flex;
+        flex-direction: column;
+
+        button {
+            width: 40%;
+            color: white;
+            box-shadow: -1px 15px 30px -12px black;
+            background-color: #cc4a1f;
+        }
+        @media (max-width: 600px){
+            
+            // min-height: 100vh;
+        }
+    }
+
+    .detail-banner-right{
+        button {
+            width: 90%;
+            color: white;
+            box-shadow: -1px 15px 30px -12px black;
+            background-color: #cc4a1f;
+        }
+        @media (max-width: 600px){
+            margin-top: 30px;
+            // min-height: 300px;
+        }
+    }
+
+    .detail-content-left, .detail-banner-right{
+        box-shadow: -1px 5px 10px -1px black;
+        border-radius: 5px;
+    }
+
+    
+
+}
+
+.img__perusahaan{
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    // border-radius: 30%;
+    overflow: hidden;
+
+    img {
+        width: 150px;
+        height: 150px;
+        background-size: cover;
+        // border-radius: 30%;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+      }
+}
+
+

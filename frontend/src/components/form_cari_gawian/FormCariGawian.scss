@@ -1,0 +1,84 @@
+.create {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+    // height: 500px;
+}
+.create label {
+    text-align: left;
+    display: block;
+}
+.create h2 {
+    font-size: 28px;
+    color:  #cc4a1f;
+    margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+}
+.create button {
+    background: #cc4a1f;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 20%;
+    box-shadow: -1px 15px 30px -12px black;
+
+    &:hover {
+        background-color: #d94514;
+    }
+}
+
+.app {
+    background-color: white;
+}
+
+.container {
+    @media screen and (max-width: 600px) {
+        width: 350px;
+        margin: auto;
+
+    }
+}
+
+.create {
+    @media screen and (max-width: 600px) {
+        width: 350px;
+        margin: auto;
+
+    }
+}
+
+.form__gawian {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    border-radius: 0.5rem; 
+    min-width: 100%;
+    min-height: 300px;
+
+    .gawian__kategori{
+        padding: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+        grid-template-columns: 1fr;
+        min-height: 350px;
+
+        button {
+            width: 40%;
+        }
+
+        .gawian__kategori{
+            padding: 0px;
+        }
+    }
+}

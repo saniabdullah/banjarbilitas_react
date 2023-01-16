@@ -1,0 +1,28 @@
+.form__gawian__admin {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    border-radius: 0.5rem; 
+    min-width: 100%;
+    min-height: 100vh;
+
+    .gawian__kategori{
+        padding: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+        grid-template-columns: 1fr;
+
+        button {
+            width: 60%;
+        }
+
+        .gawian__kategori{
+            padding: 0px;
+        }
+    }
+}
+
+.admin{
+    margin-top: 90px;
+}

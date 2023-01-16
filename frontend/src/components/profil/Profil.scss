@@ -1,0 +1,139 @@
+
+.profile{
+    --fw-bold: 700;
+    --clr-primary-400: #cc4a1f;
+    --clr-neutral-100: hsl(0, 0%, 100%);
+
+    --content-spacing: 1rem;
+    --content-padding: 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: var(--clr-primary-400);
+    overflow: hidden;
+    border-radius: 0.5rem; 
+    min-width: 100%;
+    max-height: 400px;
+    box-shadow: -1px 15px 30px -12px black;
+
+
+
+    @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+        --content-padding: 1.5rem;
+        max-width: 600px;
+        // height: 100%;
+        min-height: 800px;
+        
+        img,
+        picture{
+            display: block;
+            max-width: 100%;
+            min-height: 200px;
+        }
+
+        .profile__p {
+            padding: 5px;
+            text-align: center;
+    
+            svg {
+                width: 50px;
+                height: 23px;
+            }
+        }
+
+        .padding {
+            padding-bottom: 0;
+        }
+    }
+
+    .profile__content {
+        // display: grid;
+        // gap: var(--content-spacing);
+        padding: var(--content-padding);
+        background-color: #cc4a1f;
+    }
+
+    .profile__p {
+        padding: 5px;
+        text-align: left;
+        display: flex;
+        padding-bottom: 20px;
+
+        svg {
+            width: 50px;
+            height: 23px;
+        }
+    }
+
+    .padding {
+        padding-bottom: 40px;
+    }
+
+    img,
+    picture,
+    svg {
+      display: block;
+      max-width: 100%;
+      background-size: cover;
+    }
+    
+    button{
+      font: inherit;
+    }
+
+    p, h1, h2, h3, h4, h5, h6 {
+        overflow-wrap: break-word;
+    }
+
+    
+    .profile__header {
+        padding-bottom: 2rem; 
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            h1{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    h1, h2, h3 {
+        line-height: 1;
+    }
+
+    button {
+
+        // width: 20%;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-flex;
+        gap: 0.75rem;
+        justify-content: center;
+        align-items: center;
+      
+        border: 0;
+        border-radius: 0.5rem;
+        padding: 0.75em 1.5em;
+        background-color: var(--clr-neutral-100);
+        font-weight: var(--fw-bold);
+        font-size: 0.925rem;
+        box-shadow: -1px 15px 30px -12px black;
+        
+        
+        &:hover {
+            background-color: whitesmoke;
+        }
+    }
+
+    .profile__img{
+        background-size: cover;
+    }
+}

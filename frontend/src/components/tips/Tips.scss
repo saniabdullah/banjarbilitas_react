@@ -1,0 +1,88 @@
+.maylike-products-wrapper{
+    margin-top: 20px;
+    min-height: 80vh;
+
+    h2{
+        text-align: center;
+        // margin: 20px;
+        color: #cc4a1f;
+        font-size: 28px;
+    }
+
+    @keyframes marquee {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+    }
+
+    .marquee {
+        position: relative;
+        height: 600px;
+        width: 100%;
+        overflow-x: hidden;
+
+        .maylike-products-container{
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .track {
+            // position: absolute;
+            // white-space: nowrap;
+            will-change: transform;
+            animation: marquee 15s linear infinite;
+            width: 180%;
+
+            &:hover{
+                animation-play-state: paused;
+            }
+        }
+    }  
+}
+
+.maylike-products-container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.tip__detail{
+    padding: 50px 40px;
+    margin-top: 90px;
+    background-size: cover;
+    background-position: center;
+    // background-color: #f0f0ee;
+    border-radius: 10px;
+    position: relative;
+    min-height: min-content;
+    line-height: 0.9; 
+    width: 100%;
+
+    .img__center__tip {
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+        height: 250px;
+        background-size: cover;
+        border-radius: 10%;
+        overflow: hidden;
+    }
+}
+
+$border-radius-size: 14px;
+
+.clash-card__tip {
+    background: white;
+    width: 300px;
+    // min-height: 400px;
+  //   display: inline-block;
+    margin: auto;
+    border-radius: $border-radius-size + 5;
+    position: relative;
+    text-align: center;
+    box-shadow: -1px 15px 30px -12px black;
+    z-index: 9999;
+  }
+
